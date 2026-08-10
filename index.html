@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenas Labs — Coming Soon</title>
+  <meta name="description" content="Kenas Labs is crafting trusted wellness formulations with care and precision. Something meaningful is on its way." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon: actual Kenas Labs logo -->
+  <link rel="icon" type="image/jpeg" href="Kenas%20Labs%203d%20logo.jpg.jpeg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Design Tokens ─────────────────────────────────────── */
+    :root {
+      --bg:        #F7F5EF;
+      --primary:   #1B4332;
+      --secondary: #52796F;
+      --surface:   #D8E2DC;
+      --accent:    #B08968;
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+      --font-mono:    'IBM Plex Mono', 'Courier New', monospace;
+    }
+
+    /* ─── Reset ─────────────────────────────────────────────── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    /* ─── Base ───────────────────────────────────────────────── */
+    body {
+      background-color: var(--bg);
+      color: var(--primary);
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.6;
+      min-height: 100dvh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ─── Page Grid ──────────────────────────────────────────── */
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100dvh;
+      padding: clamp(1.5rem, 5vw, 3rem) clamp(1.5rem, 6vw, 5rem);
+    }
+
+    /* ─── Header / Wordmark ──────────────────────────────────── */
+    .wordmark {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    .wordmark-logo {
+      height: clamp(44px, 7vw, 72px);
+      width: auto;
+      display: block;
+      /* Crop the light grey canvas so only the emblem shows cleanly */
+      object-fit: contain;
+      object-position: left center;
+      /* Gentle drop shadow so it reads on the parchment bg */
+      filter: drop-shadow(0 1px 3px rgba(27, 67, 50, 0.10));
+      transition: filter 0.25s ease;
+    }
+
+    .wordmark:hover .wordmark-logo,
+    .wordmark:focus-visible .wordmark-logo {
+      filter: drop-shadow(0 2px 8px rgba(27, 67, 50, 0.18));
+    }
+
+    .wordmark:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    /* ─── Hero ───────────────────────────────────────────────── */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: clamp(3rem, 8vh, 6rem) 0 clamp(2rem, 5vh, 4rem);
+    }
+
+    /* ─── Eyebrow ────────────────────────────────────────────── */
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: clamp(0.6rem, 1.5vw, 0.7rem);
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 1.75rem;
+      opacity: 0.85;
+    }
+
+    /* ─── Headline ───────────────────────────────────────────── */
+    .headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 7vw, 5.5rem);
+      font-weight: 300;
+      font-optical-sizing: auto;
+      line-height: 1.1;
+      color: var(--primary);
+      max-width: 18ch;
+      letter-spacing: -0.01em;
+    }
+
+    .headline em {
+      font-style: italic;
+      color: var(--secondary);
+    }
+
+    /* ─── Rule + Seed ────────────────────────────────────────── */
+    .rule-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      width: clamp(160px, 40vw, 380px);
+      margin: 2.5rem auto 2.25rem;
+    }
+
+    .rule-line {
+      flex: 1;
+      height: 1px;
+      background: var(--secondary);
+      opacity: 0.35;
+    }
+
+    .rule-seed {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--secondary);
+      flex-shrink: 0;
+      animation: seed-pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes seed-pulse {
+      0%, 100% { transform: scale(1);    opacity: 0.65; }
+      50%       { transform: scale(1.08); opacity: 1;    }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rule-seed {
+        animation: none;
+      }
+    }
+
+    /* ─── Tagline ────────────────────────────────────────────── */
+    .tagline {
+      font-family: var(--font-body);
+      font-size: clamp(0.9rem, 2vw, 1.05rem);
+      font-weight: 300;
+      color: var(--secondary);
+      max-width: 38ch;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+    }
+
+    /* ─── Botanical SVG ──────────────────────────────────────── */
+    .botanical {
+      position: fixed;
+      bottom: -3rem;
+      right: -2.5rem;
+      width: clamp(200px, 32vw, 420px);
+      pointer-events: none;
+      opacity: 0.28;
+      z-index: 0;
+    }
+
+    .botanical svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ─── Footer ─────────────────────────────────────────────── */
+    footer {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem 1.5rem;
+      padding-top: clamp(1rem, 3vh, 2rem);
+      border-top: 1px solid rgba(27, 67, 50, 0.12);
+    }
+
+    .footer-copy,
+    .footer-contact {
+      font-family: var(--font-mono);
+      font-size: clamp(0.58rem, 1.3vw, 0.65rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      opacity: 0.7;
+    }
+
+    .footer-contact a {
+      color: var(--secondary);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+      padding-bottom: 1px;
+    }
+
+    .footer-contact a:hover {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+      opacity: 1;
+    }
+
+    .footer-contact a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 2px;
+      color: var(--primary);
+      opacity: 1;
+    }
+
+    /* ─── Responsive tweaks ──────────────────────────────────── */
+    @media (max-width: 480px) {
+      .botanical {
+        bottom: -2rem;
+        right: -4rem;
+        width: 220px;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .page {
+        padding: 1.25rem 1.25rem;
+      }
+
+      .headline {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Botanical illustration — bottom-right, bleeds off screen -->
+  <div class="botanical" aria-hidden="true">
+    <svg viewBox="0 0 340 420" fill="none" xmlns="http://www.w3.org/2000/svg"
+         stroke="#52796F" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- Main stem -->
+      <path d="M170 420 C168 360 162 310 155 260 C148 210 140 160 130 110 C120 65 118 38 124 18"
+            stroke-width="1.4"/>
+
+      <!-- Branch left 1 -->
+      <path d="M152 265 C135 250 118 242 100 238 C82 234 68 237 56 244"
+            stroke-width="1.1"/>
+      <!-- Leaf left 1 -->
+      <path d="M100 238 C88 222 76 214 64 215 C72 228 82 236 100 238Z"
+            stroke-width="0.9" fill="none"/>
+
+      <!-- Branch right 1 -->
+      <path d="M148 220 C162 204 178 196 196 194 C214 192 228 196 240 206"
+            stroke-width="1.1"/>
+      <!-- Leaf right 1 -->
+      <path d="M196 194 C208 178 222 172 234 174 C226 188 214 196 196 194Z"
+            stroke-width="0.9" fill="none"/>
+
+      <!-- Branch left 2 -->
+      <path d="M142 175 C125 160 108 154 90 153 C72 152 58 157 46 166"
+            stroke-width="1.1"/>
+      <!-- Leaf left 2 -->
+      <path d="M90 153 C76 138 62 132 50 134 C58 148 72 155 90 153Z"
+            stroke-width="0.9" fill="none"/>
+
+      <!-- Branch right 2 -->
+      <path d="M136 138 C150 122 166 115 184 114 C202 113 216 118 226 128"
+            stroke-width="1.1"/>
+      <!-- Leaf right 2 -->
+      <path d="M184 114 C196 98 210 93 222 96 C214 110 202 117 184 114Z"
+            stroke-width="0.9" fill="none"/>
+
+      <!-- Branch left 3 (upper) -->
+      <path d="M130 100 C115 84 100 78 84 77 C68 76 55 81 44 91"
+            stroke-width="1.0"/>
+      <!-- Leaf left 3 -->
+      <path d="M84 77 C70 62 56 57 45 60 C53 74 68 80 84 77Z"
+            stroke-width="0.9" fill="none"/>
+
+      <!-- Branch right 3 (upper) -->
+      <path d="M126 72 C138 56 152 50 168 50 C184 50 196 56 204 66"
+            stroke-width="1.0"/>
+      <!-- Leaf right 3 -->
+      <path d="M168 50 C178 34 192 29 202 33 C196 47 185 53 168 50Z"
+            stroke-width="0.9" fill="none"/>
+
+      <!-- Small tip leaves at top -->
+      <path d="M124 18 C118 8 112 4 106 6 C112 16 118 20 124 18Z"
+            stroke-width="0.9" fill="none"/>
+      <path d="M124 18 C130 8 136 5 140 8 C134 18 130 21 124 18Z"
+            stroke-width="0.9" fill="none"/>
+
+      <!-- Tiny seed dots on branches -->
+      <circle cx="56" cy="244" r="2" fill="#52796F" stroke="none"/>
+      <circle cx="240" cy="206" r="2" fill="#52796F" stroke="none"/>
+      <circle cx="46" cy="166" r="2" fill="#52796F" stroke="none"/>
+      <circle cx="226" cy="128" r="2" fill="#52796F" stroke="none"/>
+      <circle cx="44" cy="91"  r="1.8" fill="#52796F" stroke="none"/>
+      <circle cx="204" cy="66" r="1.8" fill="#52796F" stroke="none"/>
+    </svg>
+  </div>
+
+  <!-- Page layout grid -->
+  <div class="page">
+
+    <!-- Header -->
+    <header>
+      <a class="wordmark" href="/" aria-label="Kenas Labs home">
+        <img
+          class="wordmark-logo"
+          src="Kenas%20Labs%203d%20logo.jpg.jpeg"
+          alt="Kenas Labs"
+          width="220"
+          height="72"
+        />
+      </a>
+    </header>
+
+    <!-- Hero -->
+    <main class="hero" id="main-content">
+      <p class="eyebrow" aria-label="Status: Coming Soon">Coming Soon</p>
+
+      <h1 class="headline">
+        Formulated with<br />
+        care. <em>Arriving</em><br />
+        with intention.
+      </h1>
+
+      <!-- Decorative rule with seed -->
+      <div class="rule-wrap" role="presentation" aria-hidden="true">
+        <span class="rule-line"></span>
+        <span class="rule-seed"></span>
+        <span class="rule-line"></span>
+      </div>
+
+      <p class="tagline">
+        Trusted formulations are on their way.<br />
+        Kenas Labs is almost ready for you.
+      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-copy">&copy; 2026 Kenas Labs</p>
+      <p class="footer-contact">
+        <a href="mailto:contact@kenaslabs.com">contact@kenaslabs.com</a>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
