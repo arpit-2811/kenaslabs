@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 680" width="100%" height="100%">
+  <defs>
+    <filter id="drop-shadow-adults" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#1B2A6B" flood-opacity="0.18"/>
+    </filter>
+    <linearGradient id="box-grad-ad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#FCFAF5"/>
+      <stop offset="100%" stop-color="#F2EDE0"/>
+    </linearGradient>
+    <linearGradient id="box-side-ad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DCD6C8"/>
+      <stop offset="100%" stop-color="#C2B9A6"/>
+    </linearGradient>
+    <linearGradient id="bottle-amber-ad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4E2707"/>
+      <stop offset="25%" stop-color="#80410B"/>
+      <stop offset="55%" stop-color="#AB5B12"/>
+      <stop offset="85%" stop-color="#6E3507"/>
+      <stop offset="100%" stop-color="#361A02"/>
+    </linearGradient>
+    <linearGradient id="navy-ad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#233588"/>
+      <stop offset="100%" stop-color="#121A42"/>
+    </linearGradient>
+    <linearGradient id="orange-ad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A24"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="mango-gold-ad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD13B"/>
+      <stop offset="100%" stop-color="#FF9E00"/>
+    </linearGradient>
+    <linearGradient id="surface-glow-ad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A24" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow & Ground Shadow -->
+  <ellipse cx="300" cy="620" rx="260" ry="24" fill="url(#surface-glow-ad)"/>
+  <ellipse cx="230" cy="625" rx="145" ry="16" fill="#1B2A6B" opacity="0.12"/>
+  <ellipse cx="440" cy="628" rx="100" ry="14" fill="#1B2A6B" opacity="0.10"/>
+
+  <!-- ADULT PRODUCT CARTON BOX (LEFT / CENTER, TALLER 200ML) -->
+  <g filter="url(#drop-shadow-adults)">
+    <!-- Box Side (Perspective 3D) -->
+    <path d="M 75,90 L 140,55 L 140,570 L 75,605 Z" fill="url(#box-side-ad)"/>
+    <text x="-370" y="107" transform="rotate(-90)" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="11" font-weight="700" fill="#4B4436" letter-spacing="2">MANGOVITA ADULTS 200 ML</text>
+    <rect x="88" y="270" width="38" height="70" rx="3" fill="#CCC3B1" opacity="0.6"/>
+
+    <!-- Box Top Flap -->
+    <path d="M 75,90 L 140,55 L 345,55 L 280,90 Z" fill="#FBF9F4"/>
+
+    <!-- Box Front Face -->
+    <path d="M 140,55 L 345,55 L 345,570 L 140,570 Z" fill="url(#box-grad-ad)" stroke="#E4DBC7" stroke-width="1.5"/>
+
+    <!-- Header Navy Wave -->
+    <path d="M 140,55 L 345,55 L 345,145 Q 240,120 140,150 Z" fill="url(#navy-ad)"/>
+
+    <!-- Sugar Free Strip -->
+    <path d="M 140,55 L 255,55 L 240,85 L 140,85 Z" fill="url(#orange-ad)"/>
+    <text x="150" y="75" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="1">SUGAR FREE</text>
+
+    <!-- FSSAI small logo mark -->
+    <text x="330" y="75" text-anchor="end" font-family="Arial, sans-serif" font-size="8.5" font-weight="700" fill="#E2E8F0">fssai</text>
+
+    <!-- Adults Variant Pill Badge with Fitness Silhouette -->
+    <g transform="translate(155, 105)">
+      <rect x="0" y="0" width="88" height="24" rx="12" fill="url(#mango-gold-ad)"/>
+      <!-- Active adult silhouette icon -->
+      <path d="M 15,6 C 16.5,6 17.5,4.8 17.5,3.5 C 17.5,2.2 16.5,1 15,1 C 13.5,1 12.5,2.2 12.5,3.5 C 12.5,4.8 13.5,6 15,6 Z M 21,7.5 L 17.5,7.5 L 15.5,11 L 13,9.5 L 15.5,7 C 15,6.5 14.5,6.2 13.8,6.2 C 13,6.2 12.2,6.7 11.8,7.5 L 9,12 L 11,13 L 13,11 L 13,16 L 15.5,20 L 17.5,18.5 L 15.5,15 L 17,12.5 L 20,13.5 L 21,7.5 Z" fill="#141E4D"/>
+      <text x="26" y="16" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10" font-weight="800" fill="#141E4D" letter-spacing="0.5">FOR ADULTS</text>
+    </g>
+
+    <!-- 200 ml Badge -->
+    <rect x="290" y="105" width="42" height="22" rx="4" fill="#FFFFFF" opacity="0.9"/>
+    <text x="311" y="120" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10" font-weight="800" fill="#141E4D">200 ml</text>
+
+    <!-- Brand Name: Mangovita -->
+    <text x="155" y="195" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="30" font-weight="900" fill="#1B2A6B" letter-spacing="-0.5">Mangovita<tspan font-size="13" dy="-16">™</tspan></text>
+
+    <!-- SYRUP Pill Badge -->
+    <g transform="translate(155, 208)">
+      <rect x="0" y="0" width="76" height="20" rx="10" fill="url(#orange-ad)"/>
+      <text x="38" y="14" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" letter-spacing="1.5">SYRUP</text>
+    </g>
+    <!-- Flavor indicator -->
+    <text x="242" y="222" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#F5730E">Rich Mango Flavour</text>
+
+    <!-- Adults Tagline -->
+    <text x="155" y="248" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="800" fill="#1B2A6B" letter-spacing="0.2">HEALTH • ENERGY • STRENGTH</text>
+    <text x="155" y="262" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8" font-weight="600" fill="#525B6C">For a Better Tomorrow</text>
+
+    <!-- Formula Highlights Line -->
+    <foreignObject x="155" y="274" width="175" height="38">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 8.5px; line-height: 1.35; color: #4A5568; font-weight: 600;">
+        High Potency Amino Acids, Zinc Gluconate, Vitamin B-Complex &amp; Vital Minerals
+      </div>
+    </foreignObject>
+
+    <!-- Mango Illustration on Box -->
+    <g transform="translate(250, 325)">
+      <path d="M 32,10 C 64,10 80,38 75,70 C 70,98 42,112 16,102 C -6,90 -6,58 6,32 C 14,14 22,10 32,10 Z" fill="url(#mango-gold-ad)"/>
+      <path d="M 35,16 C 58,22 68,45 64,74 C 55,98 34,104 22,96 C 48,84 52,38 35,16 Z" fill="#F5730E" opacity="0.65"/>
+      <path d="M 32,10 C 26,-9 10,-15 0,-18 C 4,-2 11,4 27,8 Z" fill="#2E7D32"/>
+      <circle cx="30" cy="10" r="3.5" fill="#8D6E63"/>
+    </g>
+
+    <!-- Benefit Checkpoints Box -->
+    <g transform="translate(152, 328)">
+      <!-- Benefit 1 -->
+      <circle cx="8" cy="8" r="7" fill="#EBF4FF"/>
+      <path d="M 5,8 L 7,10 L 11,6" stroke="#1B2A6B" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <text x="20" y="11" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="700" fill="#1B2A6B">Boosts Energy &amp; Stamina</text>
+
+      <!-- Benefit 2 -->
+      <circle cx="8" cy="30" r="7" fill="#FEF3C7"/>
+      <path d="M 5,30 L 7,32 L 11,28" stroke="#D97706" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <text x="20" y="33" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="700" fill="#1B2A6B">Robust Immune Support</text>
+
+      <!-- Benefit 3 -->
+      <circle cx="8" cy="52" r="7" fill="#FFEDD5"/>
+      <path d="M 5,52 L 7,54 L 11,50" stroke="#EA580C" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <text x="20" y="55" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="700" fill="#1B2A6B">Mental Focus &amp; Vitality</text>
+
+      <!-- Benefit 4 -->
+      <circle cx="8" cy="74" r="7" fill="#DCFCE7"/>
+      <path d="M 5,74 L 7,76 L 11,72" stroke="#16A34A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <text x="20" y="77" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="700" fill="#1B2A6B">Muscle &amp; Cellular Recovery</text>
+    </g>
+
+    <!-- MRP Callout Ribbon -->
+    <g transform="translate(155, 435)">
+      <rect x="0" y="0" width="175" height="26" rx="5" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+      <text x="10" y="17" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="800" fill="#991B1B">MRP ₹210</text>
+      <text x="80" y="16.5" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8" font-weight="600" fill="#6B7280">(Incl. of all taxes) • 200 ml</text>
+    </g>
+
+    <!-- Box Footer Banner -->
+    <path d="M 140,500 L 345,500 L 345,570 L 140,570 Z" fill="url(#navy-ad)"/>
+    <text x="242" y="523" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="700" fill="#FFD13B">HEALTH SUPPLEMENT FOR ADULTS</text>
+    <text x="242" y="540" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8" font-weight="600" fill="#CBD5E1">Nutraceutical • Not for medicinal use</text>
+    <text x="242" y="558" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="1">KENAS LABS</text>
+  </g>
+
+  <!-- PRODUCT BOTTLE (RIGHT / 200ML TALL AMBER BOTTLE) -->
+  <g filter="url(#drop-shadow-adults)" transform="translate(325, 120)">
+    <!-- Bottle Cap & Measuring Cup -->
+    <g transform="translate(52, 0)">
+      <!-- Translucent Cup -->
+      <path d="M 6,0 L 46,0 L 50,38 L 2,38 Z" fill="#E2E8F0" opacity="0.65" stroke="#94A3B8" stroke-width="1.2"/>
+      <line x1="8" y1="13" x2="20" y2="13" stroke="#64748B" stroke-width="1"/>
+      <text x="24" y="15" font-family="Arial" font-size="6" fill="#475569">5ml</text>
+      <line x1="6" y1="24" x2="22" y2="24" stroke="#64748B" stroke-width="1"/>
+      <text x="26" y="26" font-family="Arial" font-size="6" fill="#475569">10ml</text>
+      <!-- Cap (Deep Navy Ribbed) -->
+      <rect x="8" y="34" width="36" height="26" rx="3" fill="#1B2A6B" stroke="#0F172A" stroke-width="1.2"/>
+      <line x1="14" y1="36" x2="14" y2="58" stroke="#334155" stroke-width="1"/>
+      <line x1="20" y1="36" x2="20" y2="58" stroke="#334155" stroke-width="1"/>
+      <line x1="26" y1="36" x2="26" y2="58" stroke="#334155" stroke-width="1"/>
+      <line x1="32" y1="36" x2="32" y2="58" stroke="#334155" stroke-width="1"/>
+      <line x1="38" y1="36" x2="38" y2="58" stroke="#334155" stroke-width="1"/>
+      <!-- Bottle Neck -->
+      <rect x="15" y="60" width="22" height="18" fill="url(#bottle-amber-ad)"/>
+    </g>
+
+    <!-- Bottle Amber Body (200ml Taller Silhouette) -->
+    <path d="M 68,78 Q 28,95 18,135 L 18,450 Q 18,475 48,480 L 112,480 Q 142,475 142,450 L 142,135 Q 132,95 92,78 Z" fill="url(#bottle-amber-ad)" stroke="#271402" stroke-width="1.5"/>
+
+    <!-- Specular Highlight on Amber Bottle -->
+    <path d="M 28,140 L 35,140 L 35,450 L 28,450 Z" fill="#FFFFFF" opacity="0.2"/>
+    <path d="M 40,140 L 42,140 L 42,450 L 40,450 Z" fill="#FFFFFF" opacity="0.1"/>
+
+    <!-- Bottle Label -->
+    <g transform="translate(22, 150)">
+      <rect x="0" y="0" width="116" height="275" rx="5" fill="#FFFDF8" stroke="#EFE9DD" stroke-width="1"/>
+      <!-- Label Header Navy Strip -->
+      <path d="M 0,0 L 116,0 L 116,42 Q 58,32 0,42 Z" fill="url(#navy-ad)"/>
+      <text x="8" y="14" font-family="'Plus Jakarta Sans', Arial" font-size="6.5" font-weight="800" fill="#FF8A24">SUGAR FREE</text>
+      <text x="108" y="14" text-anchor="end" font-family="'Plus Jakarta Sans', Arial" font-size="6.5" font-weight="800" fill="#FFD13B">200 ml</text>
+      <text x="58" y="30" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial" font-size="7.5" font-weight="800" fill="#FFFFFF">ADULTS FORMULA</text>
+
+      <!-- Label Brand Name -->
+      <text x="58" y="70" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial" font-size="17" font-weight="900" fill="#1B2A6B">Mangovita<tspan font-size="9" dy="-7">™</tspan></text>
+      <!-- SYRUP Badge -->
+      <rect x="30" y="79" width="56" height="16" rx="8" fill="url(#orange-ad)"/>
+      <text x="58" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="1">SYRUP</text>
+
+      <!-- Label Mango graphic miniature -->
+      <circle cx="58" cy="126" r="18" fill="#FEF3C7"/>
+      <path d="M 56,112 C 68,112 75,122 72,135 C 70,144 58,150 49,145 C 42,140 42,128 47,119 C 50,114 54,112 56,112 Z" fill="url(#mango-gold-ad)"/>
+      <path d="M 56,112 C 54,105 47,103 42,102 C 45,108 48,110 54,111 Z" fill="#2E7D32"/>
+
+      <!-- Label Formula text -->
+      <text x="58" y="160" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial" font-size="6.5" font-weight="800" fill="#1B2A6B">HEALTH • ENERGY • STRENGTH</text>
+      <text x="58" y="172" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial" font-size="5.5" font-weight="600" fill="#4B5563">Multivitamin &amp; Amino Acid Supplement</text>
+
+      <!-- Key Benefits points on label -->
+      <line x1="14" y1="184" x2="102" y2="184" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="58" y="196" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial" font-size="6" font-weight="700" fill="#1B2A6B">ENERGY • IMMUNITY • STAMINA</text>
+      <text x="58" y="208" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial" font-size="6" font-weight="700" fill="#EA580C">MRP ₹210 (200 ml)</text>
+
+      <!-- Label Footer -->
+      <rect x="0" y="235" width="116" height="40" fill="url(#navy-ad)"/>
+      <text x="58" y="248" text-anchor="middle" font-family="Arial" font-size="5.5" font-weight="600" fill="#E2E8F0">Nutraceutical • Not for medicinal use</text>
+      <text x="58" y="261" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial" font-size="7.5" font-weight="800" fill="#FFD13B">KENAS LABS</text>
+    </g>
+  </g>
+</svg>

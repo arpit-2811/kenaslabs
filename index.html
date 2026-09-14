@@ -3,386 +3,697 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kenas Labs — Coming Soon</title>
-  <meta name="description" content="Kenas Labs is crafting trusted wellness formulations with care and precision. Something meaningful is on its way." />
-  <meta name="robots" content="index, follow" />
+  <title>Kenas Labs — Health, Energy &amp; Strength | Mangovita™ Syrups</title>
+  <meta name="description" content="Kenas Labs presents Mangovita™ — premium sugar-free, mango-flavoured multivitamin &amp; amino acid syrups for Kids (100 ml) and Adults (200 ml, MRP ₹210). FSSAI Lic No. 12122999000156, ISO 9001:2015 certified." />
+  <meta name="keywords" content="Kenas Labs, Mangovita Syrup, multivitamin syrup, sugar free multivitamin, kids multivitamin, appetite syrup, L-Lysine syrup, Zinc Gluconate, Calibrant Lab" />
+  <link rel="canonical" href="https://kenaslabs.com/" />
 
-  <!-- Favicon: actual Kenas Labs logo -->
-  <link rel="icon" type="image/jpeg" href="Kenas%20Labs%203d%20logo.jpg.jpeg" />
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kenas Labs — Health, Energy &amp; Strength | Mangovita™" />
+  <meta property="og:description" content="Sugar-free, delicious mango-flavoured multivitamin health supplement syrups for children &amp; adults." />
+  <meta property="og:image" content="assets/images/mangovita-adults-hero.png" />
+  <meta property="og:url" content="https://kenaslabs.com/" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/kenas-logo.jpg" />
 
-  <style>
-    /* ─── Design Tokens ─────────────────────────────────────── */
-    :root {
-      --bg:        #F7F5EF;
-      --primary:   #1B4332;
-      --secondary: #52796F;
-      --surface:   #D8E2DC;
-      --accent:    #B08968;
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-      --font-display: 'Fraunces', Georgia, serif;
-      --font-body:    'Inter', system-ui, sans-serif;
-      --font-mono:    'IBM Plex Mono', 'Courier New', monospace;
-    }
-
-    /* ─── Reset ─────────────────────────────────────────────── */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      height: 100%;
-    }
-
-    /* ─── Base ───────────────────────────────────────────────── */
-    body {
-      background-color: var(--bg);
-      color: var(--primary);
-      font-family: var(--font-body);
-      font-weight: 400;
-      line-height: 1.6;
-      min-height: 100dvh;
-      overflow-x: hidden;
-      position: relative;
-    }
-
-    /* ─── Page Grid ──────────────────────────────────────────── */
-    .page {
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      min-height: 100dvh;
-      padding: clamp(1.5rem, 5vw, 3rem) clamp(1.5rem, 6vw, 5rem);
-    }
-
-    /* ─── Header / Wordmark ──────────────────────────────────── */
-    .wordmark {
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      user-select: none;
-    }
-
-    .wordmark-logo {
-      height: clamp(44px, 7vw, 72px);
-      width: auto;
-      display: block;
-      /* Crop the light grey canvas so only the emblem shows cleanly */
-      object-fit: contain;
-      object-position: left center;
-      /* Gentle drop shadow so it reads on the parchment bg */
-      filter: drop-shadow(0 1px 3px rgba(27, 67, 50, 0.10));
-      transition: filter 0.25s ease;
-    }
-
-    .wordmark:hover .wordmark-logo,
-    .wordmark:focus-visible .wordmark-logo {
-      filter: drop-shadow(0 2px 8px rgba(27, 67, 50, 0.18));
-    }
-
-    .wordmark:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 4px;
-      border-radius: 4px;
-    }
-
-    /* ─── Hero ───────────────────────────────────────────────── */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: clamp(3rem, 8vh, 6rem) 0 clamp(2rem, 5vh, 4rem);
-    }
-
-    /* ─── Eyebrow ────────────────────────────────────────────── */
-    .eyebrow {
-      font-family: var(--font-mono);
-      font-size: clamp(0.6rem, 1.5vw, 0.7rem);
-      font-weight: 500;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--secondary);
-      margin-bottom: 1.75rem;
-      opacity: 0.85;
-    }
-
-    /* ─── Headline ───────────────────────────────────────────── */
-    .headline {
-      font-family: var(--font-display);
-      font-size: clamp(2.4rem, 7vw, 5.5rem);
-      font-weight: 300;
-      font-optical-sizing: auto;
-      line-height: 1.1;
-      color: var(--primary);
-      max-width: 18ch;
-      letter-spacing: -0.01em;
-    }
-
-    .headline em {
-      font-style: italic;
-      color: var(--secondary);
-    }
-
-    /* ─── Rule + Seed ────────────────────────────────────────── */
-    .rule-wrap {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      width: clamp(160px, 40vw, 380px);
-      margin: 2.5rem auto 2.25rem;
-    }
-
-    .rule-line {
-      flex: 1;
-      height: 1px;
-      background: var(--secondary);
-      opacity: 0.35;
-    }
-
-    .rule-seed {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--secondary);
-      flex-shrink: 0;
-      animation: seed-pulse 4s ease-in-out infinite;
-    }
-
-    @keyframes seed-pulse {
-      0%, 100% { transform: scale(1);    opacity: 0.65; }
-      50%       { transform: scale(1.08); opacity: 1;    }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .rule-seed {
-        animation: none;
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kenaslabs.com/#organization",
+        "name": "Kenas Labs",
+        "url": "https://kenaslabs.com/",
+        "logo": "https://kenaslabs.com/assets/images/kenas-logo.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "House No. 44, 2nd Floor, Chhotey Lal Park, Basil Dargarh, Near Metro Pillar 340",
+          "addressLocality": "New Delhi",
+          "postalCode": "110015",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support",
+          "email": "contact@kenaslabs.com"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "Mangovita Kids Syrup (100 ml)",
+        "brand": { "@type": "Brand", "name": "Mangovita" },
+        "description": "Sugar-free multivitamin & amino acid health supplement syrup with L-Lysine, L-Arginine, L-Carnitine, Choline, Taurine & Zinc for children.",
+        "image": "https://kenaslabs.com/assets/images/mangovita-kids-hero.png",
+        "category": "Health Supplement"
+      },
+      {
+        "@type": "Product",
+        "name": "Mangovita Adults Syrup (200 ml)",
+        "brand": { "@type": "Brand", "name": "Mangovita" },
+        "description": "Comprehensive multivitamin and amino acid syrup for adults promoting stamina, energy and immunity.",
+        "image": "https://kenaslabs.com/assets/images/mangovita-adults-hero.png",
+        "offers": {
+          "@type": "Offer",
+          "price": "210.00",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock"
+        }
       }
-    }
-
-    /* ─── Tagline ────────────────────────────────────────────── */
-    .tagline {
-      font-family: var(--font-body);
-      font-size: clamp(0.9rem, 2vw, 1.05rem);
-      font-weight: 300;
-      color: var(--secondary);
-      max-width: 38ch;
-      line-height: 1.7;
-      letter-spacing: 0.01em;
-    }
-
-    /* ─── Botanical SVG ──────────────────────────────────────── */
-    .botanical {
-      position: fixed;
-      bottom: -3rem;
-      right: -2.5rem;
-      width: clamp(200px, 32vw, 420px);
-      pointer-events: none;
-      opacity: 0.28;
-      z-index: 0;
-    }
-
-    .botanical svg {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* ─── Footer ─────────────────────────────────────────────── */
-    footer {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem 1.5rem;
-      padding-top: clamp(1rem, 3vh, 2rem);
-      border-top: 1px solid rgba(27, 67, 50, 0.12);
-    }
-
-    .footer-copy,
-    .footer-contact {
-      font-family: var(--font-mono);
-      font-size: clamp(0.58rem, 1.3vw, 0.65rem);
-      font-weight: 400;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--secondary);
-      opacity: 0.7;
-    }
-
-    .footer-contact a {
-      color: var(--secondary);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
-      padding-bottom: 1px;
-    }
-
-    .footer-contact a:hover {
-      color: var(--primary);
-      border-bottom-color: var(--primary);
-      opacity: 1;
-    }
-
-    .footer-contact a:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 4px;
-      border-radius: 2px;
-      color: var(--primary);
-      opacity: 1;
-    }
-
-    /* ─── Responsive tweaks ──────────────────────────────────── */
-    @media (max-width: 480px) {
-      .botanical {
-        bottom: -2rem;
-        right: -4rem;
-        width: 220px;
-      }
-
-      footer {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.4rem;
-      }
-    }
-
-    @media (max-width: 360px) {
-      .page {
-        padding: 1.25rem 1.25rem;
-      }
-
-      .headline {
-        font-size: 2rem;
-      }
-    }
-  </style>
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Botanical illustration — bottom-right, bleeds off screen -->
-  <div class="botanical" aria-hidden="true">
-    <svg viewBox="0 0 340 420" fill="none" xmlns="http://www.w3.org/2000/svg"
-         stroke="#52796F" stroke-linecap="round" stroke-linejoin="round">
-
-      <!-- Main stem -->
-      <path d="M170 420 C168 360 162 310 155 260 C148 210 140 160 130 110 C120 65 118 38 124 18"
-            stroke-width="1.4"/>
-
-      <!-- Branch left 1 -->
-      <path d="M152 265 C135 250 118 242 100 238 C82 234 68 237 56 244"
-            stroke-width="1.1"/>
-      <!-- Leaf left 1 -->
-      <path d="M100 238 C88 222 76 214 64 215 C72 228 82 236 100 238Z"
-            stroke-width="0.9" fill="none"/>
-
-      <!-- Branch right 1 -->
-      <path d="M148 220 C162 204 178 196 196 194 C214 192 228 196 240 206"
-            stroke-width="1.1"/>
-      <!-- Leaf right 1 -->
-      <path d="M196 194 C208 178 222 172 234 174 C226 188 214 196 196 194Z"
-            stroke-width="0.9" fill="none"/>
-
-      <!-- Branch left 2 -->
-      <path d="M142 175 C125 160 108 154 90 153 C72 152 58 157 46 166"
-            stroke-width="1.1"/>
-      <!-- Leaf left 2 -->
-      <path d="M90 153 C76 138 62 132 50 134 C58 148 72 155 90 153Z"
-            stroke-width="0.9" fill="none"/>
-
-      <!-- Branch right 2 -->
-      <path d="M136 138 C150 122 166 115 184 114 C202 113 216 118 226 128"
-            stroke-width="1.1"/>
-      <!-- Leaf right 2 -->
-      <path d="M184 114 C196 98 210 93 222 96 C214 110 202 117 184 114Z"
-            stroke-width="0.9" fill="none"/>
-
-      <!-- Branch left 3 (upper) -->
-      <path d="M130 100 C115 84 100 78 84 77 C68 76 55 81 44 91"
-            stroke-width="1.0"/>
-      <!-- Leaf left 3 -->
-      <path d="M84 77 C70 62 56 57 45 60 C53 74 68 80 84 77Z"
-            stroke-width="0.9" fill="none"/>
-
-      <!-- Branch right 3 (upper) -->
-      <path d="M126 72 C138 56 152 50 168 50 C184 50 196 56 204 66"
-            stroke-width="1.0"/>
-      <!-- Leaf right 3 -->
-      <path d="M168 50 C178 34 192 29 202 33 C196 47 185 53 168 50Z"
-            stroke-width="0.9" fill="none"/>
-
-      <!-- Small tip leaves at top -->
-      <path d="M124 18 C118 8 112 4 106 6 C112 16 118 20 124 18Z"
-            stroke-width="0.9" fill="none"/>
-      <path d="M124 18 C130 8 136 5 140 8 C134 18 130 21 124 18Z"
-            stroke-width="0.9" fill="none"/>
-
-      <!-- Tiny seed dots on branches -->
-      <circle cx="56" cy="244" r="2" fill="#52796F" stroke="none"/>
-      <circle cx="240" cy="206" r="2" fill="#52796F" stroke="none"/>
-      <circle cx="46" cy="166" r="2" fill="#52796F" stroke="none"/>
-      <circle cx="226" cy="128" r="2" fill="#52796F" stroke="none"/>
-      <circle cx="44" cy="91"  r="1.8" fill="#52796F" stroke="none"/>
-      <circle cx="204" cy="66" r="1.8" fill="#52796F" stroke="none"/>
-    </svg>
+  <!-- Top Compliance & Certification Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-left">
+        <span class="topbar-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          ISO 9001:2015 Certified
+        </span>
+        <span style="opacity: 0.5;">•</span>
+        <span>FSSAI Lic No. <strong>12122999000156</strong></span>
+        <span style="opacity: 0.5;">•</span>
+        <span>Technical Guidance: <strong>Calibrant Lab Pvt Ltd</strong></span>
+      </div>
+      <div class="topbar-right">
+        <a href="contact.html">New Delhi, India</a>
+        <a href="mailto:contact@kenaslabs.com">contact@kenaslabs.com</a>
+      </div>
+    </div>
   </div>
 
-  <!-- Page layout grid -->
-  <div class="page">
-
-    <!-- Header -->
-    <header>
-      <a class="wordmark" href="/" aria-label="Kenas Labs home">
-        <img
-          class="wordmark-logo"
-          src="Kenas%20Labs%203d%20logo.jpg.jpeg"
-          alt="Kenas Labs"
-          width="220"
-          height="72"
-        />
+  <!-- Main Sticky Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo-wrap" aria-label="Kenas Labs Home">
+        <img src="assets/images/kenas-logo.jpg" alt="Kenas Labs Logo" class="brand-logo-img" />
+        <div class="brand-name-group">
+          <span class="brand-title">KENAS LABS</span>
+          <span class="brand-tag">Health &amp; Wellness Science</span>
+        </div>
       </a>
-    </header>
 
-    <!-- Hero -->
-    <main class="hero" id="main-content">
-      <p class="eyebrow" aria-label="Status: Coming Soon">Coming Soon</p>
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        
+        <div class="nav-dropdown">
+          <a href="#products" class="nav-link dropdown-toggle">
+            Products
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="mangovita-kids.html" class="dropdown-item">
+              <div>
+                <div class="dropdown-item-title">Mangovita™ Kids (100 ml)</div>
+                <div class="dropdown-item-desc">Growth, Immunity &amp; Appetite Booster</div>
+              </div>
+            </a>
+            <a href="mangovita-adults.html" class="dropdown-item">
+              <div>
+                <div class="dropdown-item-title">Mangovita™ Adults (200 ml)</div>
+                <div class="dropdown-item-desc">Energy, Stamina &amp; Strength (MRP ₹210)</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-      <h1 class="headline">
-        Formulated with<br />
-        care. <em>Arriving</em><br />
-        with intention.
-      </h1>
+        <a href="#benefits" class="nav-link">Why Mangovita</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
 
-      <!-- Decorative rule with seed -->
-      <div class="rule-wrap" role="presentation" aria-hidden="true">
-        <span class="rule-line"></span>
-        <span class="rule-seed"></span>
-        <span class="rule-line"></span>
+      <!-- Header Action CTAs -->
+      <div class="header-actions">
+        <button class="btn btn-whatsapp" data-wa-order="Mangovita Website Enquiry">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+          <span>Order on WhatsApp</span>
+        </button>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tagline-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5730E"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Health • Energy • Strength — For a Better Tomorrow
+        </div>
+
+        <h1 class="hero-title">
+          Complete Daily Nutrition in a Delicious <span class="highlight-orange">Mango Flavour.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Introducing <strong>Mangovita™</strong> by Kenas Labs — a scientifically balanced, 100% sugar-free multivitamin &amp; amino acid syrup. Fortified with L-Lysine, L-Arginine, L-Carnitine, Choline, Taurine, Zinc Gluconate, and natural herbal antioxidants.
+        </p>
+
+        <!-- Product Highlight Pills -->
+        <div class="hero-pills">
+          <span class="pill-feature">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            100% Sugar Free
+          </span>
+          <span class="pill-feature">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            L-Lysine &amp; Zinc Fortified
+          </span>
+          <span class="pill-feature">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Real Mango Taste
+          </span>
+          <span class="pill-feature">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Kids (100 ml) &amp; Adults (200 ml)
+          </span>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="hero-cta-group">
+          <a href="#products" class="btn btn-primary">
+            <span>Explore Mangovita Variants</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <button class="btn btn-outline" data-wa-order="Where to Buy Mangovita">
+            <span>Where to Buy</span>
+          </button>
+        </div>
       </div>
 
-      <p class="tagline">
-        Trusted formulations are on their way.<br />
-        Kenas Labs is almost ready for you.
-      </p>
-    </main>
+      <!-- Hero Visual Showcase -->
+      <div class="hero-visual-wrap">
+        <img src="assets/images/mangovita-adults-hero.png" alt="Mangovita Adults 200ml Syrup and Packaging" class="hero-main-visual" style="border-radius: 16px; box-shadow: 0 20px 40px -10px rgba(27, 42, 107, 0.2);" />
+        <div class="hero-floating-card">
+          <div class="floating-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <div>
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 0.95rem; color: var(--primary-navy);">Sugar Free &amp; Delicious</div>
+            <div style="font-size: 0.78rem; color: var(--text-muted);">Trusted by parents &amp; healthcare professionals</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p class="footer-copy">&copy; 2026 Kenas Labs</p>
-      <p class="footer-contact">
-        <a href="mailto:contact@kenaslabs.com">contact@kenaslabs.com</a>
-      </p>
-    </footer>
+  <!-- Trust & Credibility Strip -->
+  <section class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+        </div>
+        <div>
+          <div class="trust-title">ISO 9001:2015</div>
+          <div class="trust-desc">Certified Quality Framework</div>
+        </div>
+      </div>
 
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <div>
+          <div class="trust-title">FSSAI Licensed</div>
+          <div class="trust-desc">Lic No. 12122999000156</div>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+        </div>
+        <div>
+          <div class="trust-title">Technical Guidance</div>
+          <div class="trust-desc">Calibrant Lab Pvt Ltd, Haridwar</div>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+        </div>
+        <div>
+          <div class="trust-title">Zero Added Sugar</div>
+          <div class="trust-desc">Sorbitol base • Diabetics safe</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Highlight Showcase Section -->
+  <section class="section section-bg-white" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Our Flagship Formulations</span>
+        <h2 class="section-title">Designed with Care. Measured for Results.</h2>
+        <p class="section-subtitle">
+          Two targeted variants engineered with precise ratios of essential amino acids, zinc, and B-complex vitamins for optimal physical and cognitive wellness.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Variant 1: Mangovita Kids -->
+        <article class="product-card product-card-kids">
+          <div class="product-card-header">
+            <div>
+              <span class="badge badge-gold">Health Supplement for Children</span>
+              <h3 class="product-card-title">Mangovita™ Kids</h3>
+            </div>
+            <span class="badge badge-orange">100 ml Net</span>
+          </div>
+
+          <div class="product-card-formula">
+            L-Lysine HCl, L-Arginine, L-Carnitine, Choline Bitartrate, Taurine, Zinc Gluconate &amp; Multivitamins
+          </div>
+
+          <div class="product-card-visual">
+            <img src="assets/images/mangovita-kids-hero.png" alt="Mangovita Kids 100ml Syrup" style="border-radius: 8px;" />
+          </div>
+
+          <div class="product-card-specs">
+            <span class="spec-chip">Sugar Free</span>
+            <span class="spec-chip">Delicious Mango</span>
+            <span class="spec-chip">Appetite Booster (भूख)</span>
+            <span class="spec-chip">Immunity Shield</span>
+          </div>
+
+          <div class="product-card-benefits-list">
+            <div class="benefit-bullet">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span><strong>Supports Growth &amp; Strength:</strong> Builds stronger bones &amp; muscles with L-Lysine and L-Arginine.</span>
+            </div>
+            <div class="benefit-bullet">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span><strong>Appetite Stimulation (भूख बढ़ाने वाला):</strong> Increases hunger &amp; nutrient assimilation in fussy eaters.</span>
+            </div>
+            <div class="benefit-bullet">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span><strong>Mental Alertness &amp; Energy:</strong> Choline and Taurine improve focus, learning, and day-long stamina.</span>
+            </div>
+          </div>
+
+          <div class="product-card-footer">
+            <div class="product-price-block">
+              <span class="price-label">Net Volume</span>
+              <span class="price-value">100 ml</span>
+              <span class="price-sub">For Active &amp; Growing Kids</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="mangovita-kids.html" class="btn btn-outline" style="padding: 0.65rem 1.15rem; font-size: 0.85rem;">View Composition</a>
+              <button class="btn btn-primary" data-wa-order="Mangovita Kids (100 ml)" style="padding: 0.65rem 1.15rem; font-size: 0.85rem;">Enquire Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Variant 2: Mangovita Adults -->
+        <article class="product-card product-card-adults">
+          <div class="product-card-header">
+            <div>
+              <span class="badge badge-navy">Health Supplement for Adults</span>
+              <h3 class="product-card-title">Mangovita™ Adults</h3>
+            </div>
+            <span class="badge badge-orange">200 ml Net</span>
+          </div>
+
+          <div class="product-card-formula">
+            L-Lysine, L-Arginine, L-Carnitine, Choline, Taurine, Zinc Gluconate, Enzymes &amp; Multivitamins
+          </div>
+
+          <div class="product-card-visual">
+            <img src="assets/images/mangovita-adults-hero.png" alt="Mangovita Adults 200ml Syrup" style="border-radius: 8px;" />
+          </div>
+
+          <div class="product-card-specs">
+            <span class="spec-chip">Sugar Free</span>
+            <span class="spec-chip">MRP ₹210</span>
+            <span class="spec-chip">Energy &amp; Stamina</span>
+            <span class="spec-chip">Cellular Vitality</span>
+          </div>
+
+          <div class="product-card-benefits-list">
+            <div class="benefit-bullet">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span><strong>Boosts Energy &amp; Stamina:</strong> L-Carnitine and Taurine revitalize cells and fight chronic physical exhaustion.</span>
+            </div>
+            <div class="benefit-bullet">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span><strong>Better Immunity &amp; Cellular Defense:</strong> High-potency Zinc Gluconate + Grape Seed &amp; Green Amla extracts.</span>
+            </div>
+            <div class="benefit-bullet">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span><strong>Sharper Focus &amp; Digestive Support:</strong> Fortified with Choline and natural digestive enzymes (Fungal Diastase &amp; Papain).</span>
+            </div>
+          </div>
+
+          <div class="product-card-footer">
+            <div class="product-price-block">
+              <span class="price-label">Retail Price (MRP)</span>
+              <span class="price-value">₹210</span>
+              <span class="price-sub">Incl. of all taxes • 200 ml</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="mangovita-adults.html" class="btn btn-outline" style="padding: 0.65rem 1.15rem; font-size: 0.85rem;">View Full Details</a>
+              <button class="btn btn-primary" data-wa-order="Mangovita Adults (200 ml) - MRP Rs. 210" style="padding: 0.65rem 1.15rem; font-size: 0.85rem;">Order on WhatsApp</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Campaign Banner Section -->
+  <section class="section section-bg-warm" style="padding: 3rem 0;">
+    <div class="container">
+      <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--border-color);">
+        <img src="assets/images/mangovita-kids-banner.png" alt="Mangovita Kids Complete Nutrition for Healthy and Active Childhood" style="width: 100%; display: block;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Mangovita Benefits Grid -->
+  <section class="section section-bg-white" id="benefits">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">The Science Behind The Formula</span>
+        <h2 class="section-title">Why Health Professionals &amp; Families Choose Mangovita™</h2>
+        <p class="section-subtitle">
+          Engineered to bridge micronutrient gaps with active amino acids and bioavailable minerals that your body easily assimilates.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon-box icon-orange">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"></path></svg>
+          </div>
+          <h3 class="benefit-card-title">Growth &amp; Strength</h3>
+          <p class="benefit-card-desc">
+            Essential amino acids L-Lysine and L-Arginine play critical roles in collagen formation, calcium absorption, and skeletal tissue repair.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon-box icon-navy">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="benefit-card-title">Immunity Shield</h3>
+          <p class="benefit-card-desc">
+            Fortified with Zinc Gluconate, Grape Seed extract, Green Amla extract, and B-Complex vitamins to fortify immune defenses.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon-box icon-gold">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <h3 class="benefit-card-title">Energy &amp; Stamina</h3>
+          <p class="benefit-card-desc">
+            L-Carnitine and Taurine facilitate cellular ATP generation, ensuring active youngsters and working adults maintain sustained day-long vitality.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon-box icon-green">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h5l3 7 4-14 3 7h5"></path></svg>
+          </div>
+          <h3 class="benefit-card-title">Mental Alertness</h3>
+          <p class="benefit-card-desc">
+            Choline Bitartrate serves as a direct precursor to acetylcholine, promoting memory retention, quick reflexes, and mental concentration.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon-box icon-orange">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+          </div>
+          <h3 class="benefit-card-title">Appetite Stimulation</h3>
+          <p class="benefit-card-desc">
+            Specifically tailored in the kids syrup to naturally stimulate healthy appetite (भूख बढ़ाने वाला), easing mealtime anxiety for caring parents.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon-box icon-navy">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+          </div>
+          <h3 class="benefit-card-title">Zero Added Sugar</h3>
+          <p class="benefit-card-desc">
+            Formulated in a sweet sorbitol base without table sugar. Tooth enamel-friendly for kids and safe for diabetic or calorie-conscious adults.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Kenas Labs Snapshot -->
+  <section class="section section-bg-warm">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center;">
+      <div>
+        <span class="eyebrow">Pharmaceutical Heritage</span>
+        <h2 class="section-title">Rooted in Science. Committed to Pure Formulations.</h2>
+        <p style="font-size: 1.05rem; color: var(--text-body); margin-bottom: 1.25rem; line-height: 1.7;">
+          At <strong>Kenas Labs</strong>, we bridge the gap between traditional pharmaceutical rigor and modern nutraceutical innovation. Headquartered in New Delhi, our products are engineered under the technical guidance of <strong>Calibrant Lab Pvt Ltd</strong> in Haridwar, Uttarakhand.
+        </p>
+        <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.65;">
+          Every batch of Mangovita™ undergoes stringent quality parameters for ingredient purity, stability, and organoleptic excellence. We adhere strictly to FSSAI dietary supplement regulations and ISO 9001:2015 quality frameworks.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="about.html" class="btn btn-navy">Read Our Full Story</a>
+          <a href="contact.html" class="btn btn-outline">Visit Delhi Office</a>
+        </div>
+      </div>
+
+      <div style="background: #FFFFFF; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-md);">
+        <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.5rem;">
+          Regulatory &amp; Manufacturing Credentials
+        </h3>
+        
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--botanical-light); color: var(--botanical-green); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; color: var(--primary-navy);">FSSAI Central &amp; State Compliant</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Licence No: <strong>12122999000156</strong> — Category: Nutraceutical Health Supplement</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div style="width: 38px; height: 38px; border-radius: 50%; background: #EBF0FF; color: var(--primary-navy); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; color: var(--primary-navy);">ISO 9001:2015 Quality Management</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Standardized batch consistency, raw material screening, and safety protocols.</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--accent-orange-light); color: var(--accent-orange); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; color: var(--primary-navy);">Technical Guidance: Calibrant Lab</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Mfg. By: Calibrant Lab Pvt. Ltd. N-16 &amp; 17, Sector-1, IIE, SIDCUL, Haridwar (Uttarakhand) - 249403.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="section section-bg-white" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Frequently Asked Questions</span>
+        <h2 class="section-title">Everything You Need To Know</h2>
+        <p class="section-subtitle">
+          Have questions about ingredients, age recommendations, or how to purchase Mangovita™? Find answers below.
+        </p>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item is-open">
+          <button class="faq-question" aria-expanded="true">
+            <span>What makes Mangovita™ syrup different from regular multivitamin syrups?</span>
+            <span class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Mangovita™ is formulated with a dual-action blend of vital micronutrients and key functional amino acids (L-Lysine, L-Arginine, L-Carnitine, Taurine, and Choline) along with Zinc Gluconate, digestive enzymes, and herbal extracts. Unlike standard syrups that rely on heavy sugar bases, Mangovita is 100% sugar-free with a naturally delicious mango flavour.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is Mangovita Kids safe for daily consumption?</span>
+            <span class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Yes, Mangovita Kids is a certified nutraceutical health supplement manufactured under strict FSSAI guidelines. It contains no medicinal steroids or harmful additives. Always administer the dosage as recommended by your paediatrician or healthcare professional.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does Mangovita Kids help in appetite stimulation (भूख बढ़ाने वाला)?</span>
+            <span class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            L-Lysine HCl is well-documented in nutritional science for helping regulate digestive enzyme synthesis and metabolic hunger cues in developing children. Combined with digestive enzymes (Fungal Diastase &amp; Papain) and B-complex vitamins, it assists the body in properly metabolising food into energy.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can diabetic adults consume Mangovita Adults?</span>
+            <span class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Yes. Mangovita Adults is formulated completely sugar-free with a sorbitol base, making it an ideal choice for adults watching caloric intake or managing diabetes. However, if you are undergoing specific medical treatment, consult your doctor prior to starting any new dietary supplement.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What is the storage instruction for Mangovita syrups?</span>
+            <span class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Store in a cool, dry, and hygienic place below 25°C. Protect from direct sunlight and excessive heat. Keep the bottle tightly closed after each use and keep out of reach of children. Shake well before use.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How can I buy or order Mangovita™?</span>
+            <span class="faq-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            You can place orders directly through our WhatsApp enquiry line, purchase through verified pharmacy partners in Delhi NCR, or submit an enquiry via our <a href="contact.html" style="color: var(--accent-orange); font-weight: 700;">Contact Page</a>. Wholesale pharmacy inquiries are welcome.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mandatory Statutory Compliance Banner -->
+  <div class="compliance-banner">
+    <div class="container">
+      <p class="compliance-text">
+        MANDATORY STATUTORY NOTICE: This product is not to be used as a substitute for a varied diet. Nutraceutical — Not for medicinal use. Shake well before use. Keep out of reach of children.
+      </p>
+    </div>
   </div>
 
+  <!-- Corporate Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <img src="assets/images/kenas-logo.jpg" alt="Kenas Labs Logo" style="height: 44px; border-radius: 4px;" />
+            <h4 style="margin: 0;">KENAS LABS</h4>
+          </div>
+          <p>
+            Dedicated to advancing preventative health and wellness with trustworthy, science-driven formulations for children and adults across India.
+          </p>
+          <div style="font-size: 0.8rem; color: #94A3B8; line-height: 1.6;">
+            <strong>Marketed by:</strong> Kenas Labs<br />
+            House No. 44, 2nd Floor, Chhotey Lal Park, Basil Dargarh, Near Metro Pillar 340, New Delhi – 110015
+          </div>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Our Products</h5>
+          <div class="footer-links">
+            <a href="mangovita-kids.html">Mangovita™ Kids (100 ml)</a>
+            <a href="mangovita-adults.html">Mangovita™ Adults (200 ml)</a>
+            <a href="#benefits">Why Mangovita</a>
+            <a href="#faq">Dosage &amp; FAQs</a>
+            <a href="contact.html">Where to Buy</a>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Company</h5>
+          <div class="footer-links">
+            <a href="about.html">About Kenas Labs</a>
+            <a href="about.html#partner">Calibrant Lab Guidance</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="contact.html#map">Delhi Office Location</a>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Compliance &amp; Certifications</h5>
+          <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1rem;">
+            <strong>FSSAI Lic No:</strong> 12122999000156<br />
+            <strong>Quality System:</strong> ISO 9001:2015<br />
+            <strong>Technical Guidance:</strong> Calibrant Lab Pvt Ltd, Haridwar, Uttarakhand
+          </p>
+          <button class="btn btn-whatsapp" data-wa-order="General Enquiry" style="width: 100%; font-size: 0.85rem; padding: 0.75rem 1rem;">
+            <span>Chat on WhatsApp</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>Health Disclaimer:</strong> The information provided on this website is for educational and informational purposes only and is not intended as medical advice, diagnosis, or treatment. Health supplements and nutraceuticals are not intended to diagnose, treat, cure, or prevent any disease. Always consult a qualified physician or healthcare nutritionist before beginning any dietary supplement program.
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Kenas Labs. All Rights Reserved. Mangovita™ is a registered proprietary formulation.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="shipping-policy.html">Shipping &amp; Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA Widget -->
+  <a href="https://wa.me/919876543210?text=Hello%20Kenas%20Labs%2C%20I%20would%20like%20to%20enquire%20about%20Mangovita%E2%84%A2." target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Contact Kenas Labs on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+    <span>Enquire on WhatsApp</span>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
