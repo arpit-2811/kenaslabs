@@ -1365,6 +1365,28 @@ button {
   color: #CBD5E1;
 }
 
+.footer-dev-credit {
+  font-size: 0.82rem;
+  color: #94A3B8;
+  text-align: center;
+}
+
+.footer-dev-credit strong {
+  color: #E2E8F0;
+}
+
+.footer-dev-credit a {
+  color: var(--accent-orange);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-dev-credit a:hover {
+  color: #FFB800;
+  text-decoration: underline;
+}
+
 /* ==========================================================================
    Floating WhatsApp Button
    ========================================================================== */
