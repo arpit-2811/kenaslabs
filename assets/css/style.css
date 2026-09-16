@@ -60,6 +60,13 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -72,8 +79,8 @@ body {
   color: var(--text-body);
   line-height: 1.65;
   font-weight: 400;
-  overflow-x: hidden;
-  position: relative;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 img, svg {
@@ -493,6 +500,8 @@ button {
   background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
   padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(4rem, 8vw, 6.5rem);
   overflow: hidden;
+  overflow-x: clip;
+  contain: paint;
 }
 
 .hero-glow {
@@ -522,6 +531,9 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  max-width: 100%;
+  line-height: 1.4;
+  word-break: break-word;
   background: #EBF0FF;
   color: var(--primary-navy);
   font-family: var(--font-heading);
@@ -613,7 +625,7 @@ button {
 .hero-floating-card {
   position: absolute;
   bottom: 20px;
-  left: -20px;
+  left: 0;
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(10px);
   border: 1px solid var(--border-color);
@@ -923,16 +935,20 @@ button {
    ========================================================================== */
 .table-responsive {
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   background: #FFFFFF;
   box-shadow: var(--shadow-sm);
   margin: 1.5rem 0;
+  contain: paint;
 }
 
 .nutrition-table {
   width: 100%;
+  min-width: 540px;
   border-collapse: collapse;
   text-align: left;
   font-size: 0.9rem;
@@ -1467,20 +1483,24 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(15, 23, 42, 0.5);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 998;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .nav-overlay.is-active {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .table-scroll-hint {
@@ -1523,7 +1543,7 @@ button {
   .hero-floating-card {
     position: static;
     margin-top: 1.5rem;
-    max-width: 360px;
+    max-width: 100%;
     width: 100%;
     justify-content: center;
   }
@@ -1543,17 +1563,8 @@ button {
   }
 }
 
-/* --- Breakpoint: Tablets Portrait & Small Laptops (max-width: 900px) --- */
-@media (max-width: 900px) {
-  .corporate-snapshot-grid,
-  .corporate-story-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-}
-
-/* --- Breakpoint: Standard Tablets & Mobile Landscape (max-width: 768px) --- */
-@media (max-width: 768px) {
+/* --- Breakpoint: Tablets Portrait & Small Laptops (max-width: 992px) --- */
+@media (max-width: 992px) {
   .topbar {
     display: none;
   }
@@ -1566,13 +1577,19 @@ button {
     display: none;
   }
 
-  /* Mobile Drawer Menu */
+  .corporate-snapshot-grid,
+  .corporate-story-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Mobile Drawer Menu (Transform based to completely prevent horizontal scroll) */
   .nav-menu {
     position: fixed;
     top: var(--header-height);
-    right: -100%;
+    right: 0;
     width: 85%;
-    max-width: 340px;
+    max-width: 320px;
     height: calc(100vh - var(--header-height));
     height: calc(100dvh - var(--header-height));
     background: #FFFFFF;
@@ -1581,13 +1598,18 @@ button {
     padding: 1.75rem 1.5rem;
     gap: 0.75rem;
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
-    transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
     overflow-y: auto;
     z-index: 1000;
   }
 
   .nav-menu.is-active {
-    right: 0;
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-link {
@@ -1658,8 +1680,26 @@ button {
   }
 }
 
+/* --- Breakpoint: Standard Tablets & Mobile Landscape (max-width: 768px) --- */
+@media (max-width: 768px) {
+  .hero-glow {
+    display: none;
+  }
+}
+
 /* --- Breakpoint: Phablets & Mobile Devices (max-width: 580px) --- */
 @media (max-width: 580px) {
+  .btn {
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
   .form-row-2col {
     grid-template-columns: 1fr;
     gap: 0;
