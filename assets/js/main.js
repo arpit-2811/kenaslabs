@@ -16,26 +16,59 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // --- Mobile Hamburger Navigation ---
+  // --- Mobile Hamburger Navigation & Backdrop Overlay ---
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
 
   if (hamburger && navMenu) {
+    // Create backdrop overlay if not already in DOM
+    let navOverlay = document.querySelector('.nav-overlay');
+    if (!navOverlay) {
+      navOverlay = document.createElement('div');
+      navOverlay.className = 'nav-overlay';
+      document.body.appendChild(navOverlay);
+    }
+
+    const closeNav = () => {
+      hamburger.classList.remove('is-active');
+      navMenu.classList.remove('is-active');
+      navOverlay.classList.remove('is-active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+
+    const openNav = () => {
+      hamburger.classList.add('is-active');
+      navMenu.classList.add('is-active');
+      navOverlay.classList.add('is-active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    };
+
     hamburger.addEventListener('click', () => {
-      const isOpen = hamburger.classList.toggle('is-active');
-      navMenu.classList.toggle('is-active');
-      hamburger.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+      const isOpen = hamburger.classList.contains('is-active');
+      if (isOpen) {
+        closeNav();
+      } else {
+        openNav();
+      }
     });
 
-    // Close when clicking nav links
-    const navLinks = navMenu.querySelectorAll('.nav-link:not(.dropdown-toggle)');
-    navLinks.forEach(link => {
+    // Close when tapping outside on backdrop
+    navOverlay.addEventListener('click', closeNav);
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && hamburger.classList.contains('is-active')) {
+        closeNav();
+      }
+    });
+
+    // Close when clicking nav links or dropdown items
+    const allNavLinks = navMenu.querySelectorAll('a');
+    allNavLinks.forEach(link => {
       link.addEventListener('click', () => {
-        hamburger.classList.remove('is-active');
-        navMenu.classList.remove('is-active');
-        hamburger.setAttribute('aria-expanded', false);
-        document.body.style.overflow = '';
+        closeNav();
       });
     });
   }
