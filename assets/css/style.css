@@ -1398,6 +1398,10 @@ button {
   transition: var(--transition);
 }
 
+.footer-dev-credit a strong {
+  color: inherit;
+}
+
 .footer-dev-credit a:hover {
   color: #FFB800;
   text-decoration: underline;
