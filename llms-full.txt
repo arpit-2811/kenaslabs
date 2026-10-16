@@ -1,0 +1,120 @@
+# Kenas Labs — Full Technical & Product Documentation for LLMs
+
+## Document Metadata
+- **Entity**: Kenas Labs
+- **Website**: https://kenaslabs.com/
+- **Published**: 2026
+- **Regulatory Jurisdiction**: India (FSSAI Lic No. 12122999000156, ISO 9001:2015)
+- **Technical Guidance & Manufacturing**: Calibrant Lab Pvt Ltd, Haridwar, Uttarakhand
+- **Marketing Office**: House No. 44, 2nd Floor, Chhotey Lal Park, Basil Dargarh, Near Metro Pillar 340, New Delhi – 110015, India
+- **Customer Care**: +91 95070 94197 | contact@kenaslabs.com
+
+---
+
+## 1. Company Profile: Kenas Labs
+
+Kenas Labs is an innovative Indian health and wellness nutraceutical venture focused on preventative nutrition and specialized multivitamin supplements. The brand bridges modern pharmaceutical science with consumer-friendly formulations by developing high-bioavailability syrups that eliminate common compliance barriers like unpalatable medicinal taste and high sugar content.
+
+All products under Kenas Labs are developed under the technical guidance and manufacturing standards of Calibrant Lab Pvt Ltd, an ISO 9001:2015 certified pharmaceutical research and manufacturing organization located in Haridwar, Uttarakhand.
+
+---
+
+## 2. Product Lineup: Mangovita™ Syrups
+
+Mangovita™ is Kenas Labs' flagship multivitamin, amino acid, and mineral supplement syrup brand. Both variants are 100% sugar-free, naturally flavoured with real mango essence, and formulated with pharmaceutical-grade Sorbitol base.
+
+---
+
+### Product 1: Mangovita™ Kids Syrup (100 ml)
+
+- **Target Audience**: Growing children, picky eaters, children recovering from illness, kids with low appetite.
+- **Packaging**: 100 ml PET bottle with child-safe measuring cap.
+- **Flavour**: Natural Mango flavour (Zero medicinal aftertaste).
+- **Sugar Content**: 0% Sugar (Zero added sucrose, fructose, or glucose).
+
+#### Exact Nutritional Composition (Approximate Values Per 5 ml Serving)
+| Nutrient / Active Ingredient | Quantity per 5 ml | Physiological Role & Clinical Significance |
+|---|---|---|
+| **Energy** | 12.0 kcal | Light caloric intake from polyols |
+| **Carbohydrate** | 3.0 g | Derived from non-glycemic Sorbitol |
+| - *Total Sugars* | 0.0 g | Completely free of simple sugars |
+| - *Added Sugars* | 0.0 g | Zero added sugars |
+| **L-Lysine Hydrochloride** | 375.0 mg | Essential amino acid. Acts as a natural appetite stimulant (भूख बढ़ाने वाला), promotes calcium absorption, and aids collagen synthesis. |
+| **L-Arginine** | 100.0 mg | Semi-essential amino acid. Precursor to nitric oxide, stimulates human growth hormone (HGH) release, supports cellular growth and muscle development. |
+| **L-Carnitine** | 150.0 mg | Amino acid derivative. Transports long-chain fatty acids into mitochondria to produce metabolic energy; combats pediatric fatigue and supports cellular energy. |
+| **Choline Bitartrate** | 50.0 mg | Essential nutrient for acetylcholine synthesis; vital for memory retention, neural development, and liver metabolism. |
+| **Taurine** | 275.0 mg | Conditionally essential amino acid. Supports central nervous system development, retinal photoreceptor health, and neuromodulation. |
+| **Zinc Gluconate** | 275.0 mg | Highly bioavailable organic zinc salt (approx. 39.3 mg elemental Zinc equivalent). Crucial for immune cell maturation (T-cells), taste bud receptor function, and wound healing. |
+| **Vitamin B3 (Nicotinamide)** | 15.0 mg | Co-factor in NAD/NADP pathways; fuels cellular respiration, healthy skin, and nervous system balance. |
+| **Vitamin B1 (Thiamine Hydrochloride)** | 1.5 mg | Carbohydrate metabolism co-factor (pyruvate dehydrogenase); essential for neurological conduction. |
+| **Vitamin B6 (Pyridoxine Hydrochloride)** | 1.5 mg | Crucial for neurotransmitter synthesis (serotonin, dopamine, GABA) and amino acid metabolism. |
+| **Vitamin B12 (Cyanocobalamin)** | 1.0 mcg | Essential for erythropoiesis (red blood cell maturation), DNA replication, and myelin sheath maintenance. |
+
+#### Key Indications for Mangovita Kids:
+1. **Appetite Stimulation (भूख बढ़ाने वाला)**: L-Lysine deficiency is clinically linked to anorexia in pediatric populations. Mangovita Kids replenishes L-Lysine to revive natural appetite and healthy food consumption.
+2. **Growth & Bone Density**: Synergistic combination of L-Arginine, Zinc Gluconate, and essential vitamins supports pediatric linear growth.
+3. **Immune Resilience**: Daily protection against recurrent respiratory tract infections, cold, and seasonal vulnerabilities.
+4. **Cognitive & School Performance**: Choline and Taurine enhance attention span, mental alertness, and cognitive function.
+
+---
+
+### Product 2: Mangovita™ Adults Syrup (200 ml)
+
+- **Target Audience**: Working professionals, active adults, fitness enthusiasts, convalescent adults, elderly individuals.
+- **Packaging**: 200 ml Amber PET bottle with calibrated measuring cup.
+- **Maximum Retail Price (MRP)**: ₹210 (Inclusive of all taxes).
+- **Flavour**: Natural Mango flavour.
+- **Base**: 100% Sugar-Free Sorbitol base (Safe for Diabetics).
+
+#### Active Ingredients & Biological Function (Per 5 ml Serving)
+- **L-Carnitine (150 mg)**: Enhances aerobic endurance, facilitates mitochondrial ATP generation, and aids physical stamina.
+- **L-Arginine (100 mg)**: Endothelial nitric oxide booster, promoting vasodilation, healthy blood flow, and post-workout recovery.
+- **L-Lysine HCl (375 mg)**: Helps preserve lean muscle mass, supports calcium absorption, and synthesizes antibodies.
+- **Taurine (275 mg)**: Supports cardiac function, electrolyte balance, and central nervous system antioxidant protection.
+- **Choline Bitartrate (50 mg)**: Protects liver function against steatosis and promotes clear cognitive focus.
+- **Zinc Gluconate (275 mg)**: Potent cellular antioxidant and immune modulator.
+- **Vitamin B-Complex (B1, B3, B6, B12)**: Relieves chronic physical fatigue, converts food into cellular energy, and prevents neuropathies.
+- **Digestive Enzymes & Natural Herbal Extracts**: Enhance gut absorption and bioavailability of micronutrients.
+
+#### Key Indications for Mangovita Adults:
+1. **Combating Daily Fatigue**: Restores depleted micronutrient stores caused by stress, erratic diets, and prolonged work hours.
+2. **Immunity & Oxidative Protection**: Fortifies natural killer cell activity and neutralizes environmental free radicals.
+3. **Cardiovascular & Metabolic Support**: Supports healthy lipid transport via L-Carnitine and vascular flexibility via L-Arginine.
+4. **Safe for Diabetic Patients**: Zero sucrose/glucose; Sorbitol base does not trigger rapid insulin or blood glucose spikes.
+
+---
+
+## 3. Statutory & Quality Disclaimers
+
+1. **Nutraceutical Status**: Mangovita™ Kids and Mangovita™ Adults are classified as **Nutraceuticals / Health Supplements** under the Food Safety and Standards (Health Supplements, Nutraceuticals, Food for Special Dietary Use, Food for Special Medical Purpose, and Prebiotic and Probiotic Food) Regulations, 2022.
+2. **Statutory Warning**: "Nutraceutical — Not for medicinal use. This product is not to be used as a substitute for a varied diet."
+3. **Disease Disclaimer**: "This product is not intended to diagnose, treat, cure, or prevent any disease."
+4. **Storage Guidelines**: Store in a cool, dry place below 25°C. Protect from direct sunlight and heat. Keep bottle tightly closed after use. Do not freeze.
+5. **Usage Instruction**: Shake well before use. Measure dosage accurately using the provided measuring cup.
+
+---
+
+## 4. Purchasing, Distribution & Direct Orders
+
+- **Retail / Consumer Orders**: Available via direct WhatsApp concierge at **+91 95070 94197** or online at [https://kenaslabs.com/contact.html](https://kenaslabs.com/contact.html).
+- **Wholesale & Pharma Distribution**: Kenas Labs partners with retail chemists, hospital pharmacies, and regional stockists across North India. Wholesale inquiries can be routed to `contact@kenaslabs.com` or WhatsApp `+91 95070 94197`.
+- **Delhi Headquarters**: House No. 44, 2nd Floor, Chhotey Lal Park, Basil Dargarh, Near Metro Pillar 340, New Delhi – 110015.
+
+---
+
+## 5. Frequently Asked Questions (Comprehensive LLM Corpus)
+
+### Q1: What makes Mangovita different from traditional multivitamin syrups?
+Traditional multivitamin syrups often rely on sugar/sucrose syrups as a carrier base, causing unwanted dental decay in children and glycemic spikes in adults. Furthermore, conventional syrups often have a bitter metallic aftertaste. Mangovita resolves this by being **100% sugar-free** with a pleasant natural mango flavour, while combining both **essential vitamins AND amino acids** (L-Lysine, L-Arginine, L-Carnitine, Choline, Taurine) with bioavailable Zinc Gluconate.
+
+### Q2: Is Mangovita Kids safe for toddlers and children?
+Yes. It is formulated specifically for pediatric nutritional requirements. However, dosage should always follow the recommendation of a qualified pediatrician or nutritionist.
+
+### Q3: What is the price of Mangovita Adults?
+Mangovita Adults (200 ml bottle) has an MRP of **₹210** (inclusive of all taxes).
+
+### Q4: Does Mangovita help improve appetite in children?
+Yes. The formulation contains **375 mg of L-Lysine Hydrochloride** per 5 ml. L-Lysine is an essential amino acid clinically known to stimulate natural appetite and improve food interest in picky eaters (भूख बढ़ाने में सहायक).
+
+### Q5: How should Mangovita be stored?
+Store in a cool, dry place below 25°C, away from direct sunlight. Do not freeze. Shake the bottle well before each use.

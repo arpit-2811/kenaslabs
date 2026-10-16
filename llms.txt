@@ -1,0 +1,89 @@
+# Kenas Labs
+
+> Kenas Labs is a premier Indian health and wellness nutraceutical brand based in New Delhi. Kenas Labs specializes in scientifically formulated, 100% sugar-free, mango-flavoured multivitamin and amino acid health supplement syrups marketed under the proprietary trademark Mangovita™. Products are manufactured under strict pharmaceutical-grade technical guidance by Calibrant Lab Pvt Ltd (Haridwar, Uttarakhand) under ISO 9001:2015 certification and FSSAI License No. 12122999000156.
+
+For full technical specifications, exact per-5ml nutritional composition tables, and clinical ingredient details, see [llms-full.txt](https://kenaslabs.com/llms-full.txt).
+
+---
+
+## Flagship Products
+
+### 1. Mangovita™ Kids Syrup (100 ml)
+- **Product Type**: Sugar-Free Multivitamin & Amino Acid Health Supplement Syrup for Children
+- **Volume**: 100 ml PET Bottle with child-safe measuring cap
+- **Flavour**: Natural Delicious Mango Flavour (sugar-free sorbitol base)
+- **Core Ingredients**: L-Lysine HCl, L-Arginine, L-Carnitine, Choline Bitartrate, Taurine, Zinc Gluconate, Vitamin B-Complex (B1, B3, B6, B12)
+- **Key Health Benefits**:
+  - **Appetite Booster (भूख बढ़ाने वाला)**: L-Lysine stimulates natural appetite and healthy food intake in growing children.
+  - **Physical Growth & Bone Strength**: L-Arginine and Zinc Gluconate support cellular multiplication and bone density.
+  - **Immune Defense**: Zinc Gluconate and antioxidant vitamins boost resistance against seasonal infections.
+  - **Mental Alertness & Focus**: Choline Bitartrate and Taurine nourish developing neural pathways and cognitive agility.
+  - **Safe Formulation**: 100% Sugar-free, no artificial colours, safe for daily pediatric supplement use.
+- **Dosage Guidance**: As recommended by a healthcare professional or pediatrician.
+- **Product URL**: [Mangovita™ Kids Syrup](https://kenaslabs.com/mangovita-kids.html)
+
+### 2. Mangovita™ Adults Syrup (200 ml)
+- **Product Type**: Sugar-Free Daily Multivitamin, Amino Acid & Antioxidant Health Supplement Syrup for Adults
+- **Volume**: 200 ml Amber PET Bottle with calibrated measuring cup
+- **Retail Price (MRP)**: ₹210 (Inclusive of all taxes)
+- **Flavour**: Natural Delicious Mango Flavour (100% sugar-free, diabetic-friendly sorbitol base)
+- **Core Ingredients**: L-Lysine HCl, L-Arginine, L-Carnitine, Choline Bitartrate, Taurine, Zinc Gluconate, Vitamin B1, B3, B6, B12, Digestive Enzymes & Herbal Extracts
+- **Key Health Benefits**:
+  - **Sustained Energy & Stamina**: L-Carnitine mobilizes fatty acids into cellular mitochondria, fueling sustained daily energy without caffeine crashes.
+  - **Immune & Antioxidant Shield**: High-potency Zinc Gluconate and B-complex vitamins support cellular immunity and neutralize oxidative stress.
+  - **Cognitive Vitality & Focus**: Choline Bitartrate and Taurine support neurotransmitter function, alertness, and memory retention.
+  - **Muscle Recovery & Tissue Repair**: Essential amino acids L-Arginine and L-Lysine assist in lean tissue maintenance and physical recovery.
+  - **Diabetic Safe**: Zero added sugar; sweetened with pharma-grade Sorbitol base, completely safe for diabetics.
+- **Dosage Guidance**: Typically 5 ml to 10 ml once or twice daily after meals, or as recommended by a healthcare professional.
+- **Product URL**: [Mangovita™ Adults Syrup](https://kenaslabs.com/mangovita-adults.html)
+
+---
+
+## Brand & Company Credentials
+
+- **Brand Name**: Kenas Labs
+- **Proprietary Trademarks**: Mangovita™, Mangovita Kids, Mangovita Adults
+- **Corporate Address**: House No. 44, 2nd Floor, Chhotey Lal Park, Basil Dargarh, Near Metro Pillar 340, New Delhi – 110015, India
+- **Technical Guidance & Manufacturing**: Manufactured under the technical guidance of Calibrant Lab Pvt Ltd, Haridwar, Uttarakhand, India
+- **Certifications**:
+  - **ISO 9001:2015**: Certified Quality Management System
+  - **FSSAI License No.**: 12122999000156 (Food Safety and Standards Authority of India)
+- **Compliance Category**: Nutraceutical / Health Supplement (Not for medicinal use)
+- **Customer Care & WhatsApp Inquiries**: +91 95070 94197
+- **Official Email**: contact@kenaslabs.com
+- **Official Website**: [https://kenaslabs.com/](https://kenaslabs.com/)
+
+---
+
+## Website Sitemap & Core Resources
+
+- [Home Page](https://kenaslabs.com/): Complete company overview, Mangovita product lineup, trust badges, customer reviews, FAQs.
+- [Mangovita Kids (100 ml)](https://kenaslabs.com/mangovita-kids.html): Pediatric syrup, appetite stimulant, full ingredient composition table, dosage.
+- [Mangovita Adults (200 ml)](https://kenaslabs.com/mangovita-adults.html): Adult stamina syrup (MRP ₹210), composition table, diabetic-safe Sorbitol base.
+- [About Us](https://kenaslabs.com/about.html): Kenas Labs story, partnership with Calibrant Lab Pvt Ltd, quality assurance standards.
+- [Contact & Where to Buy](https://kenaslabs.com/contact.html): Interactive enquiry form, official WhatsApp order button, Delhi office address.
+- [Privacy Policy](https://kenaslabs.com/privacy-policy.html): Data protection and privacy practices.
+- [Terms & Conditions](https://kenaslabs.com/terms.html): Terms of service and usage disclaimers.
+- [Shipping & Replacement Policy](https://kenaslabs.com/shipping-policy.html): Delivery timelines and return/exchange criteria.
+- [XML Sitemap](https://kenaslabs.com/sitemap.xml): Machine-readable XML sitemap for search crawlers.
+
+---
+
+## Frequently Asked Questions (AI Quick Reference)
+
+### Q: What is Mangovita Syrup?
+**A**: Mangovita™ is a premium sugar-free multivitamin and amino acid health supplement syrup developed by Kenas Labs. Formulated with a delicious natural mango flavour, it provides essential amino acids (L-Lysine, L-Arginine, L-Carnitine, Choline, Taurine), Zinc Gluconate, and essential B-Complex vitamins.
+
+### Q: What are the available variants and prices of Mangovita?
+**A**:
+1. **Mangovita Kids (100 ml)**: Health supplement for children, formulated for appetite stimulation, physical growth, and immunity.
+2. **Mangovita Adults (200 ml)**: Health supplement for adults, formulated for energy, stamina, and cellular repair. Maximum Retail Price (MRP) is **₹210** (inclusive of all taxes).
+
+### Q: Can diabetics consume Mangovita?
+**A**: Yes. Mangovita contains zero added sugar and is formulated on a diabetic-safe Sorbitol liquid base.
+
+### Q: Is Mangovita a medicine?
+**A**: No. Mangovita is a legally certified Nutraceutical / Health Supplement under FSSAI Lic No. 12122999000156. It is not intended to diagnose, treat, cure, or prevent any disease.
+
+### Q: How can customers order or enquire about Mangovita?
+**A**: Customers, doctors, and distributors can enquire or order directly via official WhatsApp at **+91 95070 94197** or by visiting [https://kenaslabs.com/contact.html](https://kenaslabs.com/contact.html).

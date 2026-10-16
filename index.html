@@ -21,6 +21,9 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
+  <!-- LLM Context / Generative Engine Optimization (llms.txt) -->
+  <link rel="alternate" type="text/markdown" href="https://kenaslabs.com/llms.txt" title="LLM Context" />
+
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
@@ -30,8 +33,10 @@
         "@type": "Organization",
         "@id": "https://kenaslabs.com/#organization",
         "name": "Kenas Labs",
+        "alternateName": ["Kenas Labs India", "KenasLabs"],
         "url": "https://kenaslabs.com/",
         "logo": "https://kenaslabs.com/assets/images/kenas-logo.jpg",
+        "description": "Kenas Labs is an Indian health and wellness nutraceutical brand producing scientifically formulated, 100% sugar-free multivitamin syrups under the Mangovita™ brand.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "House No. 44, 2nd Floor, Chhotey Lal Park, Basil Dargarh, Near Metro Pillar 340",
@@ -41,30 +46,102 @@
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "contactType": "Customer Support",
-          "email": "contact@kenaslabs.com"
+          "contactType": "Customer Support & Wholesale Enquiries",
+          "telephone": "+91-95070-94197",
+          "email": "contact@kenaslabs.com",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        "knowsAbout": [
+          "Mangovita Syrup",
+          "Multivitamin Syrups",
+          "Pediatric Appetite Stimulants",
+          "Sugar-Free Health Supplements",
+          "L-Lysine Formulations",
+          "Zinc Gluconate Supplements"
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://kenaslabs.com/mangovita-kids.html#product",
+        "name": "Mangovita™ Kids Syrup (100 ml)",
+        "alternateName": ["Mangovita Kids", "Mangovita Child Syrup", "Mangovita Syrup for Children"],
+        "brand": { "@type": "Brand", "name": "Mangovita" },
+        "manufacturer": { "@id": "https://kenaslabs.com/#organization" },
+        "description": "Sugar-free multivitamin & amino acid syrup for children with L-Lysine HCl, L-Arginine, L-Carnitine, Choline, Taurine & Zinc Gluconate. Formulated for growth, immunity and appetite stimulation (भूख बढ़ाने वाला).",
+        "image": "https://kenaslabs.com/assets/images/mangovita-kids-hero.png",
+        "category": "Health Supplement / Nutraceutical",
+        "url": "https://kenaslabs.com/mangovita-kids.html",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kenaslabs.com/mangovita-kids.html"
         }
       },
       {
         "@type": "Product",
-        "name": "Mangovita Kids Syrup (100 ml)",
+        "@id": "https://kenaslabs.com/mangovita-adults.html#product",
+        "name": "Mangovita™ Adults Syrup (200 ml)",
+        "alternateName": ["Mangovita Adults", "Mangovita Multivitamin Syrup", "Mangovita 200ml"],
         "brand": { "@type": "Brand", "name": "Mangovita" },
-        "description": "Sugar-free multivitamin & amino acid health supplement syrup with L-Lysine, L-Arginine, L-Carnitine, Choline, Taurine & Zinc for children.",
-        "image": "https://kenaslabs.com/assets/images/mangovita-kids-hero.png",
-        "category": "Health Supplement"
-      },
-      {
-        "@type": "Product",
-        "name": "Mangovita Adults Syrup (200 ml)",
-        "brand": { "@type": "Brand", "name": "Mangovita" },
-        "description": "Comprehensive multivitamin and amino acid syrup for adults promoting stamina, energy and immunity.",
+        "manufacturer": { "@id": "https://kenaslabs.com/#organization" },
+        "description": "Comprehensive daily multivitamin and amino acid syrup for adults promoting stamina, energy and immunity. Sugar-free mango flavour on diabetic-safe sorbitol base.",
         "image": "https://kenaslabs.com/assets/images/mangovita-adults-hero.png",
+        "category": "Health Supplement / Nutraceutical",
+        "url": "https://kenaslabs.com/mangovita-adults.html",
         "offers": {
           "@type": "Offer",
           "price": "210.00",
           "priceCurrency": "INR",
-          "availability": "https://schema.org/InStock"
+          "availability": "https://schema.org/InStock",
+          "url": "https://kenaslabs.com/mangovita-adults.html"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://kenaslabs.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What makes Mangovita™ unique compared to regular multivitamin syrups?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mangovita™ is formulated with a dual-action blend of vital micronutrients and key functional amino acids (L-Lysine, L-Arginine, L-Carnitine, Taurine, and Choline) along with Zinc Gluconate, digestive enzymes, and herbal extracts. Unlike standard syrups that rely on heavy sugar bases, Mangovita is 100% sugar-free with a naturally delicious mango flavour."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Mangovita Kids safe for daily consumption?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Mangovita Kids is a certified nutraceutical health supplement manufactured under strict FSSAI guidelines. It contains no medicinal steroids or harmful additives. Always administer the dosage as recommended by your paediatrician or healthcare professional."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Mangovita Kids help in appetite stimulation (भूख बढ़ाने वाला)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L-Lysine HCl is well-documented in nutritional science for helping regulate digestive enzyme synthesis and metabolic hunger cues in developing children. Combined with digestive enzymes (Fungal Diastase & Papain) and B-complex vitamins, it assists the body in properly metabolising food into energy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can diabetic adults consume Mangovita Adults?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Mangovita Adults is formulated completely sugar-free with a sorbitol base, making it an ideal choice for adults watching caloric intake or managing diabetes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I buy or order Mangovita™?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can place orders directly through our WhatsApp line at +91 95070 94197, purchase through verified pharmacy partners in Delhi NCR, or submit an enquiry via our contact page."
+            }
+          }
+        ]
       }
     ]
   }
