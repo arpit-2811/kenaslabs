@@ -608,6 +608,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .hero-main-visual {
@@ -638,6 +639,10 @@ button {
   z-index: 3;
 }
 
+.hero-floating-card > div:not(.floating-icon-wrap) {
+  min-width: 0;
+}
+
 .floating-icon-wrap {
   width: 44px;
   height: 44px;
@@ -647,6 +652,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -1544,12 +1550,21 @@ button {
     justify-content: center;
   }
 
+  .hero-visual-wrap {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
   .hero-floating-card {
     position: static;
-    margin-top: 1.5rem;
-    max-width: 100%;
+    margin-top: 1.25rem;
+    max-width: 420px;
     width: 100%;
-    justify-content: center;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    text-align: left;
+    box-shadow: 0 4px 16px rgba(27, 42, 107, 0.08);
   }
 
   .product-detail-grid {
@@ -1817,6 +1832,17 @@ button {
   .pill-feature {
     font-size: 0.78rem;
     padding: 0.35rem 0.65rem;
+  }
+
+  .hero-floating-card {
+    padding: 0.85rem 1rem;
+    gap: 0.75rem;
+    max-width: 100%;
+  }
+
+  .hero-floating-card .floating-icon-wrap {
+    width: 38px;
+    height: 38px;
   }
 
   /* Floating WhatsApp FAB */
