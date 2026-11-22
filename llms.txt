@@ -1,8 +1,8 @@
 # Kenas Labs
 
-> Kenas Labs is a premier Indian health and wellness nutraceutical brand based in New Delhi. Kenas Labs specializes in scientifically formulated, 100% sugar-free, mango-flavoured multivitamin and amino acid health supplement syrups marketed under the proprietary trademark Mangovita™. Products are manufactured under strict pharmaceutical-grade technical guidance by Calibrant Lab Pvt Ltd (Haridwar, Uttarakhand) under ISO 9001:2015 certification and FSSAI License No. 12122999000156.
+> Kenas Labs is a premier Indian health and wellness nutraceutical brand based in New Delhi. Kenas Labs specializes in scientifically formulated, 100% sugar-free, mango-flavoured multivitamin and amino acid health supplement syrups marketed under the proprietary trademark Mangovita™. Products are manufactured under strict pharmaceutical-grade technical guidance by Calibrant Lab Pvt Ltd (Haridwar, Uttarakhand) under ISO 9001:2015, GMP, WHO-GMP & cGMP certifications and FSSAI License No. 12122999000156.
 
-For full technical specifications, exact per-5ml nutritional composition tables, and clinical ingredient details, see [llms-full.txt](https://kenaslabs.com/llms-full.txt).
+For full technical specifications, proprietary active ingredient details, and clinical literature guidelines, see [llms-full.txt](https://kenaslabs.com/llms-full.txt).
 
 ---
 
@@ -12,7 +12,7 @@ For full technical specifications, exact per-5ml nutritional composition tables,
 - **Product Type**: Sugar-Free Multivitamin & Amino Acid Health Supplement Syrup for Children
 - **Volume**: 100 ml PET Bottle with child-safe measuring cap
 - **Flavour**: Natural Delicious Mango Flavour (sugar-free sorbitol base)
-- **Core Ingredients**: L-Lysine HCl, L-Arginine, L-Carnitine, Choline Bitartrate, Taurine, Zinc Gluconate, Vitamin B-Complex (B1, B3, B6, B12)
+- **Core Ingredients**: L-Lysine HCl, L-Arginine, L-Carnitine, Choline Bitartrate, Taurine, Zinc Gluconate, Vitamin B-Complex (B1, B3, B6, B12), Digestive Enzymes (Fungal Diastase, Papain) & Herbal Extracts
 - **Key Health Benefits**:
   - **Appetite Booster (भूख बढ़ाने वाला)**: L-Lysine stimulates natural appetite and healthy food intake in growing children.
   - **Physical Growth & Bone Strength**: L-Arginine and Zinc Gluconate support cellular multiplication and bone density.
@@ -45,21 +45,25 @@ For full technical specifications, exact per-5ml nutritional composition tables,
 - **Proprietary Trademarks**: Mangovita™, Mangovita Kids, Mangovita Adults
 - **Corporate Address**: House No. 44, 2nd Floor, Chhotey Lal Park, Basil Dargarh, Near Metro Pillar 340, New Delhi – 110015, India
 - **Technical Guidance & Manufacturing**: Manufactured under the technical guidance of Calibrant Lab Pvt Ltd, Haridwar, Uttarakhand, India
-- **Certifications**:
+- **Certifications & Accreditations**:
   - **ISO 9001:2015**: Certified Quality Management System
+  - **GMP, WHO-GMP & cGMP**: Certified Good Manufacturing Practices & Quality Standards
   - **FSSAI License No.**: 12122999000156 (Food Safety and Standards Authority of India)
 - **Compliance Category**: Nutraceutical / Health Supplement (Not for medicinal use)
-- **Customer Care & WhatsApp Inquiries**: +91 95070 94197
+- **Customer Care & WhatsApp Inquiries**: +91 95070 25598 (https://wa.me/919507025598)
 - **Official Email**: contact@kenaslabs.com
 - **Official Website**: [https://kenaslabs.com/](https://kenaslabs.com/)
+- **Official Social Channels**:
+  - **Instagram**: [https://www.instagram.com/kenash100?jplx=ejBpZjk0dmU2bG1z](https://www.instagram.com/kenash100?jplx=ejBpZjk0dmU2bG1z) (@kenash100)
+  - **Facebook**: [https://www.facebook.com/kenaslabs](https://www.facebook.com/kenaslabs)
 
 ---
 
 ## Website Sitemap & Core Resources
 
 - [Home Page](https://kenaslabs.com/): Complete company overview, Mangovita product lineup, trust badges, customer reviews, FAQs.
-- [Mangovita Kids (100 ml)](https://kenaslabs.com/mangovita-kids.html): Pediatric syrup, appetite stimulant, full ingredient composition table, dosage.
-- [Mangovita Adults (200 ml)](https://kenaslabs.com/mangovita-adults.html): Adult stamina syrup (MRP ₹210), composition table, diabetic-safe Sorbitol base.
+- [Mangovita Kids (100 ml)](https://kenaslabs.com/mangovita-kids.html): Pediatric syrup, appetite stimulant, active nutrient profile, dosage.
+- [Mangovita Adults (200 ml)](https://kenaslabs.com/mangovita-adults.html): Adult stamina syrup (MRP ₹210), active nutrient profile, diabetic-safe Sorbitol base.
 - [About Us](https://kenaslabs.com/about.html): Kenas Labs story, partnership with Calibrant Lab Pvt Ltd, quality assurance standards.
 - [Contact & Where to Buy](https://kenaslabs.com/contact.html): Interactive enquiry form, official WhatsApp order button, Delhi office address.
 - [Privacy Policy](https://kenaslabs.com/privacy-policy.html): Data protection and privacy practices.
@@ -86,4 +90,4 @@ For full technical specifications, exact per-5ml nutritional composition tables,
 **A**: No. Mangovita is a legally certified Nutraceutical / Health Supplement under FSSAI Lic No. 12122999000156. It is not intended to diagnose, treat, cure, or prevent any disease.
 
 ### Q: How can customers order or enquire about Mangovita?
-**A**: Customers, doctors, and distributors can enquire or order directly via official WhatsApp at **+91 95070 94197** or by visiting [https://kenaslabs.com/contact.html](https://kenaslabs.com/contact.html).
+**A**: Customers, doctors, and distributors can enquire or order directly via official WhatsApp at **+91 95070 25598** or by visiting [https://kenaslabs.com/contact.html](https://kenaslabs.com/contact.html).

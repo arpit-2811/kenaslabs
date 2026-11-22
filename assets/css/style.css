@@ -1448,6 +1448,40 @@ button {
   fill: currentColor;
 }
 
+/* Social Icons */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #E2E8F0 !important;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  color: #FFFFFF !important;
+}
+
+.social-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(220, 39, 67, 0.35);
+}
+
+.social-facebook:hover {
+  background: #1877F2;
+  border-color: #1877F2;
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.35);
+}
+
 /* ==========================================================================
    Responsive Helper Components
    ========================================================================== */
@@ -1551,20 +1585,21 @@ button {
   }
 
   .hero-visual-wrap {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .hero-floating-card {
-    position: static;
-    margin-top: 1.25rem;
-    max-width: 420px;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: flex-start;
-    text-align: left;
-    box-shadow: 0 4px 16px rgba(27, 42, 107, 0.08);
+    position: static !important;
+    margin-top: 1.25rem !important;
+    max-width: 420px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    box-shadow: 0 4px 16px rgba(27, 42, 107, 0.08) !important;
   }
 
   .product-detail-grid {
@@ -1835,9 +1870,13 @@ button {
   }
 
   .hero-floating-card {
-    padding: 0.85rem 1rem;
+    position: static !important;
+    margin-top: 1rem !important;
+    padding: 0.85rem 1rem !important;
     gap: 0.75rem;
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .hero-floating-card .floating-icon-wrap {
@@ -1845,16 +1884,38 @@ button {
     height: 38px;
   }
 
-  /* Floating WhatsApp FAB */
+  /* Floating WhatsApp FAB - Compact & Safe Margins */
   .whatsapp-floating {
-    padding: 0.85rem;
+    width: 48px;
+    height: 48px;
+    padding: 0;
     border-radius: 50%;
-    bottom: 16px;
+    bottom: 20px;
     right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45);
+  }
+
+  .whatsapp-floating svg {
+    width: 26px;
+    height: 26px;
   }
 
   .whatsapp-floating span {
     display: none;
+  }
+
+  /* Product Page Mobile Heading & Clearance Fix */
+  .product-info-panel h1 {
+    font-size: clamp(1.6rem, 5.2vw, 2.1rem);
+    line-height: 1.25;
+    padding-right: 0.5rem;
+  }
+
+  .product-detail-grid {
+    padding-bottom: 2.5rem;
   }
 
   .product-card {

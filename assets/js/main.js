@@ -4,7 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Configuration: Update this WhatsApp phone number for live client orders
-  const WHATSAPP_PHONE_NUMBER = '919507094197'; 
+  const WHATSAPP_PHONE_NUMBER = '919507025598'; 
 
   // --- Sticky Header Scroll Effect ---
   const header = document.querySelector('.header');
